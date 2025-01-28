@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.10.4 on darwin)" generated="2025-01-28T22:37:46.517424" rpa="false" schemaversion="5">
+<suite id="s1" name="UAT Lab7 001 &amp; UAT Lab7 002">
+<suite id="s1-s1" name="UAT Lab7 001" source="/Users/mink/Desktop/SoftwareEngineer/Lab8/UAT_Lab7_001.robot">
+<kw name="Open Browser To Form Page" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-28T22:37:46.607222" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:7272/form.html'.</msg>
+<msg time="2025-01-28T22:37:57.748390" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-01-28T22:37:57.748703" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=132.0.6834.111)
+Stacktrace:
+0   chromedriver                        0x000000010280a7b8 cxxbridge1$str$ptr + 2598452
+1   chromedriver                        0x0000000102802ff8 cxxbridge1$str$ptr + 2567796
+2   chromedriver                        0x00000001023a3f0c cxxbridge1$string$len + 88260
+3   chromedriver                        0x000000010239d320 cxxbridge1$string$len + 60632
+4   chromedriver                        0x000000010238f89c cxxbridge1$string$len + 4692
+5   chromedriver                        0x0000000102391254 cxxbridge1$string$len + 11276
+6   chromedriver                        0x000000010238fc48 cxxbridge1$string$len + 5632
+7   chromedriver                        0x000000010238f67c cxxbridge1$string$len + 4148
+8   chromedriver                        0x000000010238f3f0 cxxbridge1$string$len + 3496
+9   chromedriver                        0x000000010238d0f8 chromedriver + 184568
+10  chromedriver                        0x000000010238dc30 chromedriver + 187440
+11  chromedriver                        0x00000001023a6460 cxxbridge1$string$len + 97816
+12  chromedriver                        0x0000000102423708 cxxbridge1$string$len + 610496
+13  chromedriver                        0x0000000102423148 cxxbridge1$string$len + 609024
+14  chromedriver                        0x00000001023dce1c cxxbridge1$string$len + 321492
+15  chromedriver                        0x00000001023dda64 cxxbridge1$string$len + 324636
+16  chromedriver                        0x00000001027d56d4 cxxbridge1$str$ptr + 2381136
+17  chromedriver                        0x00000001027d89f4 cxxbridge1$str$ptr + 2394224
+18  chromedriver                        0x00000001027bc03c cxxbridge1$str$ptr + 2277048
+19  chromedriver                        0x00000001027d92b4 cxxbridge1$str$ptr + 2396464
+20  chromedriver                        0x00000001027adc04 cxxbridge1$str$ptr + 2218624
+21  chromedriver                        0x00000001027f3d60 cxxbridge1$str$ptr + 2505692
+22  chromedriver                        0x00000001027f3edc cxxbridge1$str$ptr + 2506072
+23  chromedriver                        0x0000000102802c6c cxxbridge1$str$ptr + 2566888
+24  libsystem_pthread.dylib             0x00000001923d02e4 _pthread_start + 136
+25  libsystem_pthread.dylib             0x00000001923cb0fc thread_start + 8
+</msg>
+<arg>${FORM_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2025-01-28T22:37:46.607098" elapsed="11.144090">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=132.0.6834.111)
+Stacktrace:
+0   chromedriver                        0x000000010280a7b8 cxxbridge1$str$ptr + 2598452
+1   chromedriver                        0x0000000102802ff8 cxxbridge1$str$ptr + 2567796
+2   chromedriver                        0x00000001023a3f0c cxxbridge1$string$len + 88260
+3   chromedriver                        0x000000010239d320 cxxbridge1$string$len + 60632
+4   chromedriver                        0x000000010238f89c cxxbridge1$string$len + 4692
+5   chromedriver                        0x0000000102391254 cxxbridge1$string$len + 11276
+6   chromedriver                        0x000000010238fc48 cxxbridge1$string$len + 5632
+7   chromedriver                        0x000000010238f67c cxxbridge1$string$len + 4148
+8   chromedriver                        0x000000010238f3f0 cxxbridge1$strin...
+    [ Message content over the limit has been removed. ]
+...er                        0x00000001023dda64 cxxbridge1$string$len + 324636
+16  chromedriver                        0x00000001027d56d4 cxxbridge1$str$ptr + 2381136
+17  chromedriver                        0x00000001027d89f4 cxxbridge1$str$ptr + 2394224
+18  chromedriver                        0x00000001027bc03c cxxbridge1$str$ptr + 2277048
+19  chromedriver                        0x00000001027d92b4 cxxbridge1$str$ptr + 2396464
+20  chromedriver                        0x00000001027adc04 cxxbridge1$str$ptr + 2218624
+21  chromedriver                        0x00000001027f3d60 cxxbridge1$str$ptr + 2505692
+22  chromedriver                        0x00000001027f3edc cxxbridge1$str$ptr + 2506072
+23  chromedriver                        0x0000000102802c6c cxxbridge1$str$ptr + 2566888
+24  libsystem_pthread.dylib             0x00000001923d02e4 _pthread_start + 136
+25  libsystem_pthread.dylib             0x00000001923cb0fc thread_start + 8</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2025-01-28T22:37:57.751529" elapsed="0.000023"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<arg>Customer Inquiry</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="NOT RUN" start="2025-01-28T22:37:57.751610" elapsed="0.000014"/>
+</kw>
+<status status="FAIL" start="2025-01-28T22:37:46.606716" elapsed="11.145027">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=132.0.6834.111)
+Stacktrace:
+0   chromedriver                        0x000000010280a7b8 cxxbridge1$str$ptr + 2598452
+1   chromedriver                        0x0000000102802ff8 cxxbridge1$str$ptr + 2567796
+2   chromedriver                        0x00000001023a3f0c cxxbridge1$string$len + 88260
+3   chromedriver                        0x000000010239d320 cxxbridge1$string$len + 60632
+4   chromedriver                        0x000000010238f89c cxxbridge1$string$len + 4692
+5   chromedriver                        0x0000000102391254 cxxbridge1$string$len + 11276
+6   chromedriver                        0x000000010238fc48 cxxbridge1$string$len + 5632
+7   chromedriver                        0x000000010238f67c cxxbridge1$string$len + 4148
+8   chromedriver                        0x000000010238f3f0 cxxbridge1$strin...
+    [ Message content over the limit has been removed. ]
+...er                        0x00000001023dda64 cxxbridge1$string$len + 324636
+16  chromedriver                        0x00000001027d56d4 cxxbridge1$str$ptr + 2381136
+17  chromedriver                        0x00000001027d89f4 cxxbridge1$str$ptr + 2394224
+18  chromedriver                        0x00000001027bc03c cxxbridge1$str$ptr + 2277048
+19  chromedriver                        0x00000001027d92b4 cxxbridge1$str$ptr + 2396464
+20  chromedriver                        0x00000001027adc04 cxxbridge1$str$ptr + 2218624
+21  chromedriver                        0x00000001027f3d60 cxxbridge1$str$ptr + 2505692
+22  chromedriver                        0x00000001027f3edc cxxbridge1$str$ptr + 2506072
+23  chromedriver                        0x0000000102802c6c cxxbridge1$str$ptr + 2566888
+24  libsystem_pthread.dylib             0x00000001923d02e4 _pthread_start + 136
+25  libsystem_pthread.dylib             0x00000001923cb0fc thread_start + 8</status>
+</kw>
+<test id="s1-s1-t1" name="001: Open Form" line="46">
+<doc>เปิดฟอร์ม</doc>
+<status status="FAIL" start="2025-01-28T22:37:57.752083" elapsed="0.000492">Parent suite setup failed:
+WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=132.0.6834.111)
+Stacktrace:
+0   chromedriver                        0x000000010280a7b8 cxxbridge1$str$ptr + 2598452
+1   chromedriver                        0x0000000102802ff8 cxxbridge1$str$ptr + 2567796
+2   chromedriver                        0x00000001023a3f0c cxxbridge1$string$len + 88260
+3   chromedriver                        0x000000010239d320 cxxbridge1$string$len + 60632
+4   chromedriver                        0x000000010238f89c cxxbridge1$string$len + 4692
+5   chromedriver                        0x0000000102391254 cxxbridge1$string$len + 11276
+6   chromedriver                        0x000000010238fc48 cxxbridge1$string$len + 5632
+7   chromedriver                        0x000000010238f67c cxxbridge1$string$len + 4148
+8   chromedriver                        0x000000010238f3f0 cxxbridge1$strin...
+    [ Message content over the limit has been removed. ]
+...er                        0x00000001023dda64 cxxbridge1$string$len + 324636
+16  chromedriver                        0x00000001027d56d4 cxxbridge1$str$ptr + 2381136
+17  chromedriver                        0x00000001027d89f4 cxxbridge1$str$ptr + 2394224
+18  chromedriver                        0x00000001027bc03c cxxbridge1$str$ptr + 2277048
+19  chromedriver                        0x00000001027d92b4 cxxbridge1$str$ptr + 2396464
+20  chromedriver                        0x00000001027adc04 cxxbridge1$str$ptr + 2218624
+21  chromedriver                        0x00000001027f3d60 cxxbridge1$str$ptr + 2505692
+22  chromedriver                        0x00000001027f3edc cxxbridge1$str$ptr + 2506072
+23  chromedriver                        0x0000000102802c6c cxxbridge1$str$ptr + 2566888
+24  libsystem_pthread.dylib             0x00000001923d02e4 _pthread_start + 136
+25  libsystem_pthread.dylib             0x00000001923cb0fc thread_start + 8</status>
+</test>
+<test id="s1-s1-t2" name="002: Record Success" line="50">
+<doc>กรอกข้อมูลที่ครบถ้วน</doc>
+<status status="FAIL" start="2025-01-28T22:37:57.752889" elapsed="0.000350">Parent suite setup failed:
+WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=132.0.6834.111)
+Stacktrace:
+0   chromedriver                        0x000000010280a7b8 cxxbridge1$str$ptr + 2598452
+1   chromedriver                        0x0000000102802ff8 cxxbridge1$str$ptr + 2567796
+2   chromedriver                        0x00000001023a3f0c cxxbridge1$string$len + 88260
+3   chromedriver                        0x000000010239d320 cxxbridge1$string$len + 60632
+4   chromedriver                        0x000000010238f89c cxxbridge1$string$len + 4692
+5   chromedriver                        0x0000000102391254 cxxbridge1$string$len + 11276
+6   chromedriver                        0x000000010238fc48 cxxbridge1$string$len + 5632
+7   chromedriver                        0x000000010238f67c cxxbridge1$string$len + 4148
+8   chromedriver                        0x000000010238f3f0 cxxbridge1$strin...
+    [ Message content over the limit has been removed. ]
+...er                        0x00000001023dda64 cxxbridge1$string$len + 324636
+16  chromedriver                        0x00000001027d56d4 cxxbridge1$str$ptr + 2381136
+17  chromedriver                        0x00000001027d89f4 cxxbridge1$str$ptr + 2394224
+18  chromedriver                        0x00000001027bc03c cxxbridge1$str$ptr + 2277048
+19  chromedriver                        0x00000001027d92b4 cxxbridge1$str$ptr + 2396464
+20  chromedriver                        0x00000001027adc04 cxxbridge1$str$ptr + 2218624
+21  chromedriver                        0x00000001027f3d60 cxxbridge1$str$ptr + 2505692
+22  chromedriver                        0x00000001027f3edc cxxbridge1$str$ptr + 2506072
+23  chromedriver                        0x0000000102802c6c cxxbridge1$str$ptr + 2566888
+24  libsystem_pthread.dylib             0x00000001923d02e4 _pthread_start + 136
+25  libsystem_pthread.dylib             0x00000001923cb0fc thread_start + 8</status>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-28T22:37:57.753658" elapsed="0.067972"/>
+</kw>
+<status status="FAIL" start="2025-01-28T22:37:46.528264" elapsed="11.293428">Suite setup failed:
+WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=132.0.6834.111)
+Stacktrace:
+0   chromedriver                        0x000000010280a7b8 cxxbridge1$str$ptr + 2598452
+1   chromedriver                        0x0000000102802ff8 cxxbridge1$str$ptr + 2567796
+2   chromedriver                        0x00000001023a3f0c cxxbridge1$string$len + 88260
+3   chromedriver                        0x000000010239d320 cxxbridge1$string$len + 60632
+4   chromedriver                        0x000000010238f89c cxxbridge1$string$len + 4692
+5   chromedriver                        0x0000000102391254 cxxbridge1$string$len + 11276
+6   chromedriver                        0x000000010238fc48 cxxbridge1$string$len + 5632
+7   chromedriver                        0x000000010238f67c cxxbridge1$string$len + 4148
+8   chromedriver                        0x000000010238f3f0 cxxbridge1$strin...
+    [ Message content over the limit has been removed. ]
+...er                        0x00000001023dda64 cxxbridge1$string$len + 324636
+16  chromedriver                        0x00000001027d56d4 cxxbridge1$str$ptr + 2381136
+17  chromedriver                        0x00000001027d89f4 cxxbridge1$str$ptr + 2394224
+18  chromedriver                        0x00000001027bc03c cxxbridge1$str$ptr + 2277048
+19  chromedriver                        0x00000001027d92b4 cxxbridge1$str$ptr + 2396464
+20  chromedriver                        0x00000001027adc04 cxxbridge1$str$ptr + 2218624
+21  chromedriver                        0x00000001027f3d60 cxxbridge1$str$ptr + 2505692
+22  chromedriver                        0x00000001027f3edc cxxbridge1$str$ptr + 2506072
+23  chromedriver                        0x0000000102802c6c cxxbridge1$str$ptr + 2566888
+24  libsystem_pthread.dylib             0x00000001923d02e4 _pthread_start + 136
+25  libsystem_pthread.dylib             0x00000001923cb0fc thread_start + 8</status>
+</suite>
+<suite id="s1-s2" name="UAT Lab7 002" source="/Users/mink/Desktop/SoftwareEngineer/Lab8/UAT_Lab7_002.robot">
+<kw name="Open Browser To Form Page" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-28T22:37:57.824496" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:7272/form.html'.</msg>
+<msg time="2025-01-28T22:37:58.595216" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-01-28T22:37:58.595460" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=132.0.6834.111)
+Stacktrace:
+0   chromedriver                        0x00000001044b27b8 cxxbridge1$str$ptr + 2598452
+1   chromedriver                        0x00000001044aaff8 cxxbridge1$str$ptr + 2567796
+2   chromedriver                        0x000000010404bf0c cxxbridge1$string$len + 88260
+3   chromedriver                        0x0000000104045320 cxxbridge1$string$len + 60632
+4   chromedriver                        0x000000010403789c cxxbridge1$string$len + 4692
+5   chromedriver                        0x0000000104039254 cxxbridge1$string$len + 11276
+6   chromedriver                        0x0000000104037c48 cxxbridge1$string$len + 5632
+7   chromedriver                        0x000000010403767c cxxbridge1$string$len + 4148
+8   chromedriver                        0x00000001040373f0 cxxbridge1$string$len + 3496
+9   chromedriver                        0x00000001040350f8 chromedriver + 184568
+10  chromedriver                        0x0000000104035c30 chromedriver + 187440
+11  chromedriver                        0x000000010404e460 cxxbridge1$string$len + 97816
+12  chromedriver                        0x00000001040cb708 cxxbridge1$string$len + 610496
+13  chromedriver                        0x00000001040cb148 cxxbridge1$string$len + 609024
+14  chromedriver                        0x0000000104084e1c cxxbridge1$string$len + 321492
+15  chromedriver                        0x0000000104085a64 cxxbridge1$string$len + 324636
+16  chromedriver                        0x000000010447d6d4 cxxbridge1$str$ptr + 2381136
+17  chromedriver                        0x00000001044809f4 cxxbridge1$str$ptr + 2394224
+18  chromedriver                        0x000000010446403c cxxbridge1$str$ptr + 2277048
+19  chromedriver                        0x00000001044812b4 cxxbridge1$str$ptr + 2396464
+20  chromedriver                        0x0000000104455c04 cxxbridge1$str$ptr + 2218624
+21  chromedriver                        0x000000010449bd60 cxxbridge1$str$ptr + 2505692
+22  chromedriver                        0x000000010449bedc cxxbridge1$str$ptr + 2506072
+23  chromedriver                        0x00000001044aac6c cxxbridge1$str$ptr + 2566888
+24  libsystem_pthread.dylib             0x00000001923d02e4 _pthread_start + 136
+25  libsystem_pthread.dylib             0x00000001923cb0fc thread_start + 8
+</msg>
+<arg>${FORM_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2025-01-28T22:37:57.824353" elapsed="0.771303">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=132.0.6834.111)
+Stacktrace:
+0   chromedriver                        0x00000001044b27b8 cxxbridge1$str$ptr + 2598452
+1   chromedriver                        0x00000001044aaff8 cxxbridge1$str$ptr + 2567796
+2   chromedriver                        0x000000010404bf0c cxxbridge1$string$len + 88260
+3   chromedriver                        0x0000000104045320 cxxbridge1$string$len + 60632
+4   chromedriver                        0x000000010403789c cxxbridge1$string$len + 4692
+5   chromedriver                        0x0000000104039254 cxxbridge1$string$len + 11276
+6   chromedriver                        0x0000000104037c48 cxxbridge1$string$len + 5632
+7   chromedriver                        0x000000010403767c cxxbridge1$string$len + 4148
+8   chromedriver                        0x00000001040373f0 cxxbridge1$strin...
+    [ Message content over the limit has been removed. ]
+...er                        0x0000000104085a64 cxxbridge1$string$len + 324636
+16  chromedriver                        0x000000010447d6d4 cxxbridge1$str$ptr + 2381136
+17  chromedriver                        0x00000001044809f4 cxxbridge1$str$ptr + 2394224
+18  chromedriver                        0x000000010446403c cxxbridge1$str$ptr + 2277048
+19  chromedriver                        0x00000001044812b4 cxxbridge1$str$ptr + 2396464
+20  chromedriver                        0x0000000104455c04 cxxbridge1$str$ptr + 2218624
+21  chromedriver                        0x000000010449bd60 cxxbridge1$str$ptr + 2505692
+22  chromedriver                        0x000000010449bedc cxxbridge1$str$ptr + 2506072
+23  chromedriver                        0x00000001044aac6c cxxbridge1$str$ptr + 2566888
+24  libsystem_pthread.dylib             0x00000001923d02e4 _pthread_start + 136
+25  libsystem_pthread.dylib             0x00000001923cb0fc thread_start + 8</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2025-01-28T22:37:58.595918" elapsed="0.000026"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<arg>Customer Inquiry</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="NOT RUN" start="2025-01-28T22:37:58.596004" elapsed="0.000064"/>
+</kw>
+<status status="FAIL" start="2025-01-28T22:37:57.824205" elapsed="0.772024">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=132.0.6834.111)
+Stacktrace:
+0   chromedriver                        0x00000001044b27b8 cxxbridge1$str$ptr + 2598452
+1   chromedriver                        0x00000001044aaff8 cxxbridge1$str$ptr + 2567796
+2   chromedriver                        0x000000010404bf0c cxxbridge1$string$len + 88260
+3   chromedriver                        0x0000000104045320 cxxbridge1$string$len + 60632
+4   chromedriver                        0x000000010403789c cxxbridge1$string$len + 4692
+5   chromedriver                        0x0000000104039254 cxxbridge1$string$len + 11276
+6   chromedriver                        0x0000000104037c48 cxxbridge1$string$len + 5632
+7   chromedriver                        0x000000010403767c cxxbridge1$string$len + 4148
+8   chromedriver                        0x00000001040373f0 cxxbridge1$strin...
+    [ Message content over the limit has been removed. ]
+...er                        0x0000000104085a64 cxxbridge1$string$len + 324636
+16  chromedriver                        0x000000010447d6d4 cxxbridge1$str$ptr + 2381136
+17  chromedriver                        0x00000001044809f4 cxxbridge1$str$ptr + 2394224
+18  chromedriver                        0x000000010446403c cxxbridge1$str$ptr + 2277048
+19  chromedriver                        0x00000001044812b4 cxxbridge1$str$ptr + 2396464
+20  chromedriver                        0x0000000104455c04 cxxbridge1$str$ptr + 2218624
+21  chromedriver                        0x000000010449bd60 cxxbridge1$str$ptr + 2505692
+22  chromedriver                        0x000000010449bedc cxxbridge1$str$ptr + 2506072
+23  chromedriver                        0x00000001044aac6c cxxbridge1$str$ptr + 2566888
+24  libsystem_pthread.dylib             0x00000001923d02e4 _pthread_start + 136
+25  libsystem_pthread.dylib             0x00000001923cb0fc thread_start + 8</status>
+</kw>
+<test id="s1-s2-t1" name="001: Empty Destination" line="44">
+<doc>กรอกข้อมูลบางช่อง โดยไม่กรอก Destination</doc>
+<status status="FAIL" start="2025-01-28T22:37:58.596332" elapsed="0.000554">Parent suite setup failed:
+WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=132.0.6834.111)
+Stacktrace:
+0   chromedriver                        0x00000001044b27b8 cxxbridge1$str$ptr + 2598452
+1   chromedriver                        0x00000001044aaff8 cxxbridge1$str$ptr + 2567796
+2   chromedriver                        0x000000010404bf0c cxxbridge1$string$len + 88260
+3   chromedriver                        0x0000000104045320 cxxbridge1$string$len + 60632
+4   chromedriver                        0x000000010403789c cxxbridge1$string$len + 4692
+5   chromedriver                        0x0000000104039254 cxxbridge1$string$len + 11276
+6   chromedriver                        0x0000000104037c48 cxxbridge1$string$len + 5632
+7   chromedriver                        0x000000010403767c cxxbridge1$string$len + 4148
+8   chromedriver                        0x00000001040373f0 cxxbridge1$strin...
+    [ Message content over the limit has been removed. ]
+...er                        0x0000000104085a64 cxxbridge1$string$len + 324636
+16  chromedriver                        0x000000010447d6d4 cxxbridge1$str$ptr + 2381136
+17  chromedriver                        0x00000001044809f4 cxxbridge1$str$ptr + 2394224
+18  chromedriver                        0x000000010446403c cxxbridge1$str$ptr + 2277048
+19  chromedriver                        0x00000001044812b4 cxxbridge1$str$ptr + 2396464
+20  chromedriver                        0x0000000104455c04 cxxbridge1$str$ptr + 2218624
+21  chromedriver                        0x000000010449bd60 cxxbridge1$str$ptr + 2505692
+22  chromedriver                        0x000000010449bedc cxxbridge1$str$ptr + 2506072
+23  chromedriver                        0x00000001044aac6c cxxbridge1$str$ptr + 2566888
+24  libsystem_pthread.dylib             0x00000001923d02e4 _pthread_start + 136
+25  libsystem_pthread.dylib             0x00000001923cb0fc thread_start + 8</status>
+</test>
+<test id="s1-s2-t2" name="002: Empty Email" line="55">
+<doc>กรอกข้อมูลบางช่อง โดยไม่กรอก Email</doc>
+<status status="FAIL" start="2025-01-28T22:37:58.597123" elapsed="0.000510">Parent suite setup failed:
+WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=132.0.6834.111)
+Stacktrace:
+0   chromedriver                        0x00000001044b27b8 cxxbridge1$str$ptr + 2598452
+1   chromedriver                        0x00000001044aaff8 cxxbridge1$str$ptr + 2567796
+2   chromedriver                        0x000000010404bf0c cxxbridge1$string$len + 88260
+3   chromedriver                        0x0000000104045320 cxxbridge1$string$len + 60632
+4   chromedriver                        0x000000010403789c cxxbridge1$string$len + 4692
+5   chromedriver                        0x0000000104039254 cxxbridge1$string$len + 11276
+6   chromedriver                        0x0000000104037c48 cxxbridge1$string$len + 5632
+7   chromedriver                        0x000000010403767c cxxbridge1$string$len + 4148
+8   chromedriver                        0x00000001040373f0 cxxbridge1$strin...
+    [ Message content over the limit has been removed. ]
+...er                        0x0000000104085a64 cxxbridge1$string$len + 324636
+16  chromedriver                        0x000000010447d6d4 cxxbridge1$str$ptr + 2381136
+17  chromedriver                        0x00000001044809f4 cxxbridge1$str$ptr + 2394224
+18  chromedriver                        0x000000010446403c cxxbridge1$str$ptr + 2277048
+19  chromedriver                        0x00000001044812b4 cxxbridge1$str$ptr + 2396464
+20  chromedriver                        0x0000000104455c04 cxxbridge1$str$ptr + 2218624
+21  chromedriver                        0x000000010449bd60 cxxbridge1$str$ptr + 2505692
+22  chromedriver                        0x000000010449bedc cxxbridge1$str$ptr + 2506072
+23  chromedriver                        0x00000001044aac6c cxxbridge1$str$ptr + 2566888
+24  libsystem_pthread.dylib             0x00000001923d02e4 _pthread_start + 136
+25  libsystem_pthread.dylib             0x00000001923cb0fc thread_start + 8</status>
+</test>
+<test id="s1-s2-t3" name="003: Invalid Email" line="66">
+<doc>กรอกข้อมูล Email ไม่ถูกต้อง</doc>
+<status status="FAIL" start="2025-01-28T22:37:58.597785" elapsed="0.000368">Parent suite setup failed:
+WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=132.0.6834.111)
+Stacktrace:
+0   chromedriver                        0x00000001044b27b8 cxxbridge1$str$ptr + 2598452
+1   chromedriver                        0x00000001044aaff8 cxxbridge1$str$ptr + 2567796
+2   chromedriver                        0x000000010404bf0c cxxbridge1$string$len + 88260
+3   chromedriver                        0x0000000104045320 cxxbridge1$string$len + 60632
+4   chromedriver                        0x000000010403789c cxxbridge1$string$len + 4692
+5   chromedriver                        0x0000000104039254 cxxbridge1$string$len + 11276
+6   chromedriver                        0x0000000104037c48 cxxbridge1$string$len + 5632
+7   chromedriver                        0x000000010403767c cxxbridge1$string$len + 4148
+8   chromedriver                        0x00000001040373f0 cxxbridge1$strin...
+    [ Message content over the limit has been removed. ]
+...er                        0x0000000104085a64 cxxbridge1$string$len + 324636
+16  chromedriver                        0x000000010447d6d4 cxxbridge1$str$ptr + 2381136
+17  chromedriver                        0x00000001044809f4 cxxbridge1$str$ptr + 2394224
+18  chromedriver                        0x000000010446403c cxxbridge1$str$ptr + 2277048
+19  chromedriver                        0x00000001044812b4 cxxbridge1$str$ptr + 2396464
+20  chromedriver                        0x0000000104455c04 cxxbridge1$str$ptr + 2218624
+21  chromedriver                        0x000000010449bd60 cxxbridge1$str$ptr + 2505692
+22  chromedriver                        0x000000010449bedc cxxbridge1$str$ptr + 2506072
+23  chromedriver                        0x00000001044aac6c cxxbridge1$str$ptr + 2566888
+24  libsystem_pthread.dylib             0x00000001923d02e4 _pthread_start + 136
+25  libsystem_pthread.dylib             0x00000001923cb0fc thread_start + 8</status>
+</test>
+<test id="s1-s2-t4" name="004: Empty Phone Number" line="78">
+<doc>กรอกข้อมูลบางช่อง โดยไม่กรอก Phone Number</doc>
+<status status="FAIL" start="2025-01-28T22:37:58.598280" elapsed="0.000442">Parent suite setup failed:
+WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=132.0.6834.111)
+Stacktrace:
+0   chromedriver                        0x00000001044b27b8 cxxbridge1$str$ptr + 2598452
+1   chromedriver                        0x00000001044aaff8 cxxbridge1$str$ptr + 2567796
+2   chromedriver                        0x000000010404bf0c cxxbridge1$string$len + 88260
+3   chromedriver                        0x0000000104045320 cxxbridge1$string$len + 60632
+4   chromedriver                        0x000000010403789c cxxbridge1$string$len + 4692
+5   chromedriver                        0x0000000104039254 cxxbridge1$string$len + 11276
+6   chromedriver                        0x0000000104037c48 cxxbridge1$string$len + 5632
+7   chromedriver                        0x000000010403767c cxxbridge1$string$len + 4148
+8   chromedriver                        0x00000001040373f0 cxxbridge1$strin...
+    [ Message content over the limit has been removed. ]
+...er                        0x0000000104085a64 cxxbridge1$string$len + 324636
+16  chromedriver                        0x000000010447d6d4 cxxbridge1$str$ptr + 2381136
+17  chromedriver                        0x00000001044809f4 cxxbridge1$str$ptr + 2394224
+18  chromedriver                        0x000000010446403c cxxbridge1$str$ptr + 2277048
+19  chromedriver                        0x00000001044812b4 cxxbridge1$str$ptr + 2396464
+20  chromedriver                        0x0000000104455c04 cxxbridge1$str$ptr + 2218624
+21  chromedriver                        0x000000010449bd60 cxxbridge1$str$ptr + 2505692
+22  chromedriver                        0x000000010449bedc cxxbridge1$str$ptr + 2506072
+23  chromedriver                        0x00000001044aac6c cxxbridge1$str$ptr + 2566888
+24  libsystem_pthread.dylib             0x00000001923d02e4 _pthread_start + 136
+25  libsystem_pthread.dylib             0x00000001923cb0fc thread_start + 8</status>
+</test>
+<test id="s1-s2-t5" name="005: Invalid Phone Number" line="89">
+<doc>กรอกข้อมูล Phone Number ไม่ถูกต้อง</doc>
+<status status="FAIL" start="2025-01-28T22:37:58.598846" elapsed="0.000433">Parent suite setup failed:
+WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=132.0.6834.111)
+Stacktrace:
+0   chromedriver                        0x00000001044b27b8 cxxbridge1$str$ptr + 2598452
+1   chromedriver                        0x00000001044aaff8 cxxbridge1$str$ptr + 2567796
+2   chromedriver                        0x000000010404bf0c cxxbridge1$string$len + 88260
+3   chromedriver                        0x0000000104045320 cxxbridge1$string$len + 60632
+4   chromedriver                        0x000000010403789c cxxbridge1$string$len + 4692
+5   chromedriver                        0x0000000104039254 cxxbridge1$string$len + 11276
+6   chromedriver                        0x0000000104037c48 cxxbridge1$string$len + 5632
+7   chromedriver                        0x000000010403767c cxxbridge1$string$len + 4148
+8   chromedriver                        0x00000001040373f0 cxxbridge1$strin...
+    [ Message content over the limit has been removed. ]
+...er                        0x0000000104085a64 cxxbridge1$string$len + 324636
+16  chromedriver                        0x000000010447d6d4 cxxbridge1$str$ptr + 2381136
+17  chromedriver                        0x00000001044809f4 cxxbridge1$str$ptr + 2394224
+18  chromedriver                        0x000000010446403c cxxbridge1$str$ptr + 2277048
+19  chromedriver                        0x00000001044812b4 cxxbridge1$str$ptr + 2396464
+20  chromedriver                        0x0000000104455c04 cxxbridge1$str$ptr + 2218624
+21  chromedriver                        0x000000010449bd60 cxxbridge1$str$ptr + 2505692
+22  chromedriver                        0x000000010449bedc cxxbridge1$str$ptr + 2506072
+23  chromedriver                        0x00000001044aac6c cxxbridge1$str$ptr + 2566888
+24  libsystem_pthread.dylib             0x00000001923d02e4 _pthread_start + 136
+25  libsystem_pthread.dylib             0x00000001923cb0fc thread_start + 8</status>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-28T22:37:58.599609" elapsed="0.067947"/>
+</kw>
+<status status="FAIL" start="2025-01-28T22:37:57.822083" elapsed="0.845536">Suite setup failed:
+WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=132.0.6834.111)
+Stacktrace:
+0   chromedriver                        0x00000001044b27b8 cxxbridge1$str$ptr + 2598452
+1   chromedriver                        0x00000001044aaff8 cxxbridge1$str$ptr + 2567796
+2   chromedriver                        0x000000010404bf0c cxxbridge1$string$len + 88260
+3   chromedriver                        0x0000000104045320 cxxbridge1$string$len + 60632
+4   chromedriver                        0x000000010403789c cxxbridge1$string$len + 4692
+5   chromedriver                        0x0000000104039254 cxxbridge1$string$len + 11276
+6   chromedriver                        0x0000000104037c48 cxxbridge1$string$len + 5632
+7   chromedriver                        0x000000010403767c cxxbridge1$string$len + 4148
+8   chromedriver                        0x00000001040373f0 cxxbridge1$strin...
+    [ Message content over the limit has been removed. ]
+...er                        0x0000000104085a64 cxxbridge1$string$len + 324636
+16  chromedriver                        0x000000010447d6d4 cxxbridge1$str$ptr + 2381136
+17  chromedriver                        0x00000001044809f4 cxxbridge1$str$ptr + 2394224
+18  chromedriver                        0x000000010446403c cxxbridge1$str$ptr + 2277048
+19  chromedriver                        0x00000001044812b4 cxxbridge1$str$ptr + 2396464
+20  chromedriver                        0x0000000104455c04 cxxbridge1$str$ptr + 2218624
+21  chromedriver                        0x000000010449bd60 cxxbridge1$str$ptr + 2505692
+22  chromedriver                        0x000000010449bedc cxxbridge1$str$ptr + 2506072
+23  chromedriver                        0x00000001044aac6c cxxbridge1$str$ptr + 2566888
+24  libsystem_pthread.dylib             0x00000001923d02e4 _pthread_start + 136
+25  libsystem_pthread.dylib             0x00000001923cb0fc thread_start + 8</status>
+</suite>
+<status status="FAIL" start="2025-01-28T22:37:46.518321" elapsed="12.149785"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="7" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="7" skip="0" id="s1" name="UAT Lab7 001 &amp; UAT Lab7 002">UAT Lab7 001 &amp; UAT Lab7 002</stat>
+<stat pass="0" fail="2" skip="0" id="s1-s1" name="UAT Lab7 001">UAT Lab7 001 &amp; UAT Lab7 002.UAT Lab7 001</stat>
+<stat pass="0" fail="5" skip="0" id="s1-s2" name="UAT Lab7 002">UAT Lab7 001 &amp; UAT Lab7 002.UAT Lab7 002</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
